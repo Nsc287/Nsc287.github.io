@@ -1,0 +1,461 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+:root {
+	--pink: #D88B9B;
+	--red: #B22222;
+	--yellow: #f4d040;
+	--green: #57d68d;
+	--blue: #6495ED;
+	--black: #111111;
+
+	--gray: #52525b;  
+	--graydark: #3f3f46; /* Text */
+	--white: #f3f8f8;
+	--blush: #f1d0c1;
+	--coral: #e7a690fb; 
+	--butterscotch: #efbb67;
+	--smoke:#a9b6bc;
+	--darkegg: #c2d5cf;
+	--emeralosea: #5c9a97;
+}
+
+/* CSS Reset */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--black);
+	scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body,
+h1,h2,h3,h4,h5,h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+ol,
+ul {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Global styles */
+label, input, textarea, select {
+	display: block;
+	width: 100%;
+}
+input, select, textarea {
+	padding: 8px;
+}
+
+/* id="mob-header" */
+
+@media (max-width: 768px) {	
+	.set-mobile-header{
+		position: relative;
+		height:  35vh;
+		background-image: url(bg-mob-header-blurr.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+	}
+	.bg-mobile-header{
+		position: absolute;
+		height:  35vh;
+		top: 0px;
+		left: 0px;
+		background-image: url(bg-mob-header-blurr.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+	}
+}
+	.h1-mobile-header {
+		Position: absolute;
+		color: var(--graydark);
+		font-family: lora, sans-serif;
+		font-size: 30px;
+		font-style: italic;
+		top: 150px;
+		right: 10px;
+	}
+	.h4-mobile-header {
+		Position: absolute;
+		color: var(--graydark);
+		font-family: lora, sans-serif;
+		font-size: 20px;
+		top: 200px;
+		right: 10px;
+		/* justify-content: center; */
+		/* align-items: center; */
+	}
+
+@media (min-width: 768px) {	
+		.set-mobile-header {display: none;}
+		.bg-mobile-header {display: none;}
+		.h1-mobile-header {display: none;}
+		.h4-mobile-header {display: none;}
+}
+
+/* id="Mob-hero" */
+@media (max-width: 768px) {	
+.set-mobile-hero {
+	position: relative;
+	height:  55vh;
+	background-color: rgb(244, 242, 242);
+}
+.hamburger-button {
+    height: 4vh; width: 4vh;
+	position: absolute;
+	/* width: 100px; */
+	/* height: 100px; */
+	background-color: var(--coral);
+	top: 20px;
+	right: 20px;
+}
+.box-hero {
+	position: absolute;
+	/* background-image: url(bg-hero.png); */
+	width: 75%;
+	height: 50%;
+	top: 30%;
+	left: 12.5%;
+	right: 12.5%;
+	background-color:var(--coral);
+	/* min-width: 400px; ?? Shall this apply so the text not overflow?*/
+}
+.hero-left {
+	Position: absolute;
+	width: 180px;
+	height: 100px;
+	top: 100px;
+	left: 10px;
+	/* border: 1px color white; */
+}
+.hero-right {
+	Position: absolute;
+	width: 87%;
+	/* height: 100px; */
+	top: 30px;
+	right: 40px;
+	color: white;
+	font-family: lora, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+}
+
+.h2-hero {
+	Position: absolute;
+	color: var(--graydark);
+	font-family: lora, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	top: 55px;
+	left: 10px;
+}
+.h3-hero {
+	Position: absolute;
+	color: var(--graydark);
+	font-family: lora, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	top: 30px;
+	left: 10px;
+}
+.text-hero {
+	background-color: var(--coral);
+	color: white;
+}
+
+.img-hero {
+	position: absolute;
+	height:  10vh;
+	/* border: 1px solid whitesmoke; */
+	width: 15%;
+	/* height: 10vh; */
+	top: 15vw;
+	left: 80.5%;
+	right: 12.5%;
+	z-index: 1;
+	/* background-color:white; */
+	/* background-image: url(hero.png); */
+	/* background-size: cover; */
+	/* background-repeat: no-repeat; */
+	/* background-position-y: 50%; */
+	/* background-position-x: 50%; */
+	/* ?? how to reduce the size of image? */
+}
+.desktop-list {display: none;};
+.mobile-list {display: none;};
+}
+
+@media (min-width: 768px) {	
+	.set-mobile-hero {display: none;}
+	.hamburger-button {display: none;}
+	.box-hero {display: none;}
+	.h2-hero {display: none;}
+	.h3-hero {display: none;}
+	.text-hero {display: none;}
+	.hero-left {display: none;}
+	.hero-right {display: none;}
+	.h4-hero-right {display: none;}
+	.bg-hero {display: none;}
+	.desktop-list {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+		padding-block: 10px;
+		gap: 20px;
+		font-size: 12px;
+		font-family: lora sans-serif;
+		list-style: circle;
+		list-style: georgian;
+		/* ?? how to change color */
+	}
+	}
+
+/* id="mob-prj-zero" */
+@media (max-width: 768px) {	
+.set-mobile-prj {
+	position: relative;
+	height:  60vh;
+	background-image: url(bg-prj-full.png);
+	background-size: cover;
+}
+.box-my-prj {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	Top: 0px;
+	left: 0px;
+	background-image: url(bg-mob-header-blurr.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-position-y: 10%; */
+	background-position-x: 100%;
+}
+/* .box-mobile-prj-0 { 
+	position: absolute;
+	width: 65%;
+	height: 80%;
+	Top: 10%;
+	right: 10%;
+	background-color: whitesmoke;
+	z-index: 1;
+	display: block;
+	justify-content: space-around;
+}*/
+
+.h3-mobile-prj {
+	Position: absolute;
+	color: var(--graydark);
+	font-family: lora, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	top: 5px;
+	left: 10px;
+}
+
+/* .mob-hotSpotTextArea1 { 
+	Position: absolute;
+	Top: 50%;
+	right: 50%;
+	z-index: 2;
+
+	border-radius: 4px solid blue;
+	color: blue;
+	font-size: 14px;
+	line-height: 20px;
+	max-width: 256px;
+	padding: 4px 12px 10px;
+}*/
+
+.mob-prj-text-1 {
+	Position: absolute;
+	top: 30%;
+	left: 15%;
+	z-index: 3;
+	width: 11em;
+	}
+
+.mob-prj-text-2 {
+	Position: absolute;
+	top: 15%;
+	left: 50%;
+	z-index: 3;
+	width: 11em;
+	}
+
+.mob-prj-text-3 {
+	Position: absolute;
+	top: 85%;
+	left: 40%;
+	z-index: 3;
+	width: 11em;
+	}
+}
+
+@media (min-width: 768px) {	
+	.set-mobile-prj {display: none;}
+	.box-my-prj {display: none;}
+	.box-prj-0 {display: none;}
+}	
+/* id="Mob-contact" */
+
+
+@media (max-width: 768px) {	
+.set-mobile-contact {
+	height:  75vh;
+	background-color: rgb(244, 242, 242);
+	background-image: url(get-in-touch-phone.jfif);
+	/* background-size: cover; */
+	/* background-repeat: no-repeat; */
+}
+
+.box-mobile-contact {
+	margin-top: 10vh;
+	/* margin-left: 50%; */
+	width: 70%;
+	height: 55vh;
+	/* background-image: url(bg-mob-contact.png); */
+	/* background-size: cover; */
+	/* background-repeat: no-repeat; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	form {  
+		width:80%;
+		max-width: 600px;
+}
+
+.mobile-input-group {
+	Margin-bottom: 0px;
+	position: relative;
+}
+
+Input, textarea{ 
+	width: 100%;
+	/* padding: 10px; */
+	outline: 0;
+	border: 1px solid white;
+	color: white;
+	background: transparent;
+	font-size:11px;
+}
+
+label{
+	/* position: absolute; */
+	Cursor: text;
+	color: white;
+	font-size: medium;
+	top: 0;
+	left: 0;
+	/* transition: 0.2s */
+	/* ?? padding: 0, 5px; */
+}
+	
+.mobile-button {
+	/* padding: 10px, 0; */
+	/* color: white; */
+	
+	outline: none;
+	background: white;
+	border: 1px solid white;
+	width: 100%;
+	cursor: pointer;
+	}
+
+/* input:focus~label,
+	input:valid~label{  
+		top: -35px;
+		font-size: small;
+	textarea:focus~label,
+	textarea:valid~label{
+		top:-35px;
+		font-size:small;
+	}
+} ?? Enhancement*/
+}
+
+@media (min-width: 768px) {	
+	.box-mobile-contact {display: none;};
+	.mobile-input-group {display: none;};
+
+}
+/* Footer */
+
+footer {
+	padding: 16px;
+	text-align: center;
+}
+
+/* id=set */
+@media (min-width: 768px) {	
+	.set-desktop-header{
+		position: relative;
+		height:  35vh;
+		background-image: url(bg-mob-header-blurr.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+	}
+	.bg-desktop-header{
+		position: absolute;
+		height:  35vh;
+		top: 0px;
+		left: 0px;
+		background-image: url(bg-mob-header-blurr.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+	}
+}
+	.h1-desktop-header {
+		Position: absolute;
+		color: var(--graydark);
+		font-family: lora, sans-serif;
+		font-size: 30px;
+		font-style: italic;
+		top: 150px;
+		right: 10px;
+	}
+	.h4-desktop-header {
+		Position: absolute;
+		color: var(--graydark);
+		font-family: lora, sans-serif;
+		font-size: 20px;
+		top: 200px;
+		right: 10px;
+		/* justify-content: center; */
+		/* align-items: center; */
+	}
+
+@media (max-width: 768px) {	
+		.set-desktop-header {display: none;}
+		.bg-desktop-header {display: none;}
+		.h1-desktop-header {display: none;}
+		.h4-desktop-header {display: none;}
+}
+
+
+/* Utilities */
+
