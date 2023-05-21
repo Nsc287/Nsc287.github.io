@@ -9,7 +9,7 @@
 - [ ] At least one profile picture
         My photo
 - [ ] Biography (at least 100 words)
-        About me: I come from the automation control system industry, where I discovered the amazing contrast between natural and artificial sparks that have shaped our history and culture. I think that WEB DESIGN is one of the best ways to express the beauty of this contrast, as it blends art and technology in a harmonious way. This inspired me to enroll in She Codes, a program that empowers women to learn how to code and bring in a vibe to tech industry with more women's contribution 
+        About me: 
 - [ ] Functional Contact Form
         Your name/ Your email / Your message / Submit
 - [ ] "Projects" section

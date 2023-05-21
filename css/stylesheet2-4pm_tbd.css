@@ -94,9 +94,14 @@ input, select, textarea {
 	left: 0; /* align the mobile header to the left of the header */
 	width: 100%; /* make the mobile header span the entire width of the header */
 	height: 30%;
-	/* border: 2px solid red; */
+	border: 2px solid red;
   }
 
+
+
+
+
+  
 header h1 {
 	color: var(--graydark);
 	font-size: medium;
@@ -210,9 +215,7 @@ label{
 .mob-contact-img {
 	width: 40%;
 	height: auto;
-	border: 2px solid whitesmoke;
-	display: flex;
-	align-content: center;
+	border: 2px solid blue;
 }
 
 .mobile-contact {

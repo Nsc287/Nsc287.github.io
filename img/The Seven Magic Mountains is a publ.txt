@@ -14,3 +14,19 @@ I have a background in the automation control system industry, where I was fasci
 
 
 future
+
+ <div class="mob-hero-p-bg"
+                    <article class="mob-hero-p400">
+                    I think that WEB DESIGN is one of the best ways to express the beauty of this contrast, as it blends art and technology in a harmonious way.
+                    </article>
+                    <article class="mob-hero-p-400-to-1028">
+                        I admire the amazing contrast between natural and artificial sparks that have shaped our history and culture.
+                        <br>
+                        <br>I think that WEB DESIGN is one of the best ways to express the beauty of this contrast, as it blends art and technology in a harmonious way.
+                    </article>
+                    <article class="mob-hero-1028">
+                        I come from the automation control system industry, where I discovered the amazing contrast between natural and artificial sparks that have shaped our history and culture.
+                        <br>
+                        <br>I think that WEB DESIGN is one of the best ways to express the beauty of this contrast, as it blends art and technology in a harmonious way.
+                    </article>
+                </div>

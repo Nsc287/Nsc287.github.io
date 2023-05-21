@@ -94,9 +94,10 @@ input, select, textarea {
 	left: 0; /* align the mobile header to the left of the header */
 	width: 100%; /* make the mobile header span the entire width of the header */
 	height: 30%;
-	/* border: 2px solid red; */
+	border: 2px solid red;
   }
 
+  
 header h1 {
 	color: var(--graydark);
 	font-size: medium;
@@ -129,6 +130,18 @@ header h1 {
 	/* margin-top: 20px; */
 }
 
+.mob-contact-set {
+	height:  auto;
+	width: 100%;
+	/* background-color: rgb(244, 242, 242); */
+	background-image: url(bg-mob-contact-blurr.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: 35%;
+	opacity: 90%;
+	display: flex;
+	
+}
 
 @media (max-width: 767px){
 .hamburger-button{
@@ -140,6 +153,8 @@ header h1 {
 @media (min-width: 768px){
 	.hamburger-button {display: none};
 } 
+
+
 
 /* id=contacts */
 #mobile-contact {
@@ -210,9 +225,7 @@ label{
 .mob-contact-img {
 	width: 40%;
 	height: auto;
-	border: 2px solid whitesmoke;
-	display: flex;
-	align-content: center;
+	border: 2px solid blue;
 }
 
 .mobile-contact {
